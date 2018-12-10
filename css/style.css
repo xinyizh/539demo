@@ -39,6 +39,10 @@ a{
 	text-decoration: none;
 }
 
+#current{
+	text-decoration: underline;
+}
+
 a.page:hover {
 	color: white; 
 	background-color: black;;
