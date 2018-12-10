@@ -114,6 +114,10 @@ textarea {
 	height: 200px;
 }
 
+section {
+	display: block;
+}
+
 .gallery{
 	width: 95%;
 	border: 2px;
@@ -189,6 +193,14 @@ textarea {
     width: 100%;
 }
 
+#imag{
+	display: block;
+}
+
+#para{
+	display: none;
+}
+
 @media screen and (min-width: 468px){
 	.awesome{
 		width: 3%;
@@ -229,6 +241,14 @@ textarea {
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 10px;
 	}
+
+	#para{
+		display: block;
+	}
+
+	#imag{
+		display: none;
+	}
 }
 
 @media screen and (orientation: landscape){	
@@ -258,4 +278,5 @@ textarea {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 10px;
 	}
+
 }
