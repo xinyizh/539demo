@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/lightbox.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <title>Experience</title>
+</head>
+
+<body>
+    <header>
+        <a class="skip-main" href="#main">Skip to main content</a>
+        <nav>
+            <ul>
+                <li class="awesome"><a href="https://github.com/xinyizh" aria-label="github"><i class="fab fa-github"></i></a></li>
+                <li class="awesome"><a href="https://www.facebook.com/home.php?ref=wizard" aria-label="facebook"><i
+                            class="fab fa-facebook-square"></i></a></li>
+                <li class="awesome"><a href="https://www.instagram.com/edwina_zxy/" aria-label="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li class="awesome"><a href="https://twitter.com/EdwinaZxy" aria-label="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li class="space"></li>
+                <li><a href="index.html" class="page"> About</a></li>
+                <li><a href="experience.html" class="page">Experience</a></li>
+                <li><a href="travel.html" class="page">Travel</a></li>
+                <li><a href="contact.html" class="page">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>My Experience</h1>
+    </header>
+    <main id="main">
+        <div class="word">
+            <p>Before I came to USA, I had lived in Shanghai since I was born.
+                In 2015, I participated in the college entrance examination and was then admitted to University of
+                Michigan - Shanghai Jiatong University Joint Institute (UM-SJTU JI).
+            </p>
+            <p>
+                At that time, I was very nervous to study there because the official language for this institute is
+                English and I had never thought of studying everything in English.
+                To make things worse, I had little background in my major - Electrical and Computer Engineering.
+                Fortunately, I made a quick adaptation to the new environment.
+            </p>
+            <p>
+                In 2017 winter, I exchanged to University of Navarra for one month, studying Spanish.
+                I would like to learn Spanish because Spanish is the second most spoken language in the world.
+                Also, it was my first time to Europe, and it was a great opportunity for me to know about a different
+                culture.
+            </p>
+            <p>
+                However, when I came back to China, I found that there was not much Spanish language course in
+                Shanghai.
+                In other words, it was hard for me to continue learning Spanish during the semesters in my university.
+                Therefore, I chose German as my second major in SJTU and after a year of study, I successfully got a
+                chance to exchange to Technical University of Berlin for one month in 2018 winter, studying 3D
+                printing.
+                In this case, not only could I practice my oral German ability with native speakers, but I was also
+                able to experince the local customs.
+                By the way, 3D printing was a very cool technology for me and the equipments there was more advanced
+                than in SJTU.
+            </p>
+            <p>
+                After I came back from Berlin, I had a tough time finding an intern as well as preparing TOEFL and GRE
+                tests for applications for graduate schools.
+                I also decided my track in the future to be either data science or computer engineering.
+            </p>
+            <p>
+                At the end of April, it occurred to me that University of Michigan School of Information offered JI
+                students a 3+2 MSI program that allowed us, junior students, to study data analytics/science there as
+                graduate students.
+            </p>
+            <p>
+                This is why I am here, and where my new life begins.
+            </p>
+        </div>
+        <div class="image"><img src="images/page2-6.jpg" alt="NQ" /></div>
+
+        <section>
+            <div class="controls">
+                <button type="button" class="control" data-sort="default:asc">Asc</button>
+                <button type="button" class="control" data-sort="default:desc">Desc</button>
+            </div>
+
+            <div class="gallery container">
+                <div class="column"><a href="images/page2-1.JPG" data-lightbox="roadtrip1" data-title="Shanghai" class="mix"><img
+                            src="images/page2-1.JPG" alt="Shanghai"></a></div>
+                <div class="column"><a href="images/page2-2.jpg" data-lightbox="roadtrip2" data-title="UM-SJTU JI"
+                        class="mix"><img src="images/page2-2.jpg" alt="JI"></a></div>
+                <div class="column"><a href="images/page2-3.jpg" data-lightbox="roadtrip4" data-title="Spain" class="mix">
+                        <img src="images/page2-3.jpg" alt="Spain">
+                    </a></div>
+                <div class="column"><a href="images/page2-4.jpeg" data-lightbox="roadtrip6" data-title="Berlin" class="mix">
+                        <img src="images/page2-4.jpeg" alt="Berlin">
+                    </a></div>
+                <div class="column"><a href="images/page2-5.jpeg" data-lightbox="roadtrip8" data-title="UMSI" class="mix">
+                        <img src="images/page2-5.jpeg" alt="UMSI">
+                    </a></div>
+                <div class="column"><a href="images/page2-5.jpeg" data-lightbox="roadtrip9" data-title="UMSI" class="mix">
+                        <img src="images/page2-5.jpeg" alt="UMSI_another">
+                    </a></div>
+            </div>
+        </section>
+        <script src="js/lightbox-plus-jquery.js"></script>
+        <script src="js/mixitup.min.js"></script>
+
+        <script>
+            var containerEl = document.querySelector('.container');
+            var mixer = mixitup(containerEl);
+        </script>
+    </main>
+    <footer>
+        &copy 2018 by Xinyi Zhang
+    </footer>
+</body>
+
+</html>

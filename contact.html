@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <title>Contact</title>
+
+    <script type="text/javascript">
+        function checkform() {
+            var a = document.getElementById("name");
+            var b = document.getElementById("email");
+            if (!a.value) {
+                document.getElementById("nameerrormsg").style.display = "block";
+                if (!b.value) document.getElementById("emailerrormsg").style.display = "block";
+                else document.getElementById("emailerrormsg").style.display = "none";
+                return false;
+            } else {
+                document.getElementById("nameerrormsg").style.display = "none";
+                if (!b.value) {
+                    document.getElementById("emailerrormsg").style.display = "block";
+                    return false;
+                }
+                else document.getElementById("emailerrormsg").style.display = "none";
+            }
+            return true;
+        }  
+    </script>
+</head>
+
+<body class="background">
+    <header>
+        <a class="skip-main" href="#main">Skip to main content</a>
+        <nav>
+            <ul>
+                <li class="awesome"><a href="https://github.com/xinyizh" aria-label="github"><i class="fab fa-github"></i></a></li>
+                <li class="awesome"><a href="https://www.facebook.com/home.php?ref=wizard" aria-label="facebook"><i
+                            class="fab fa-facebook-square"></i></a></li>
+                <li class="awesome"><a href="https://www.instagram.com/edwina_zxy/" aria-label="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li class="awesome"><a href="https://twitter.com/EdwinaZxy" aria-label="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li class="space"></li>
+                <li><a href="index.html" class="page"> About</a></li>
+                <li><a href="experience.html" class="page">Experience</a></li>
+                <li><a href="travel.html" class="page">Travel</a></li>
+                <li><a href="contact.html" class="page">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contact me</h1>
+    </header>
+    <main id="main">
+
+        <div>
+            <p>Xinyi Zhang </p>
+            <p>+1 734 709 3006 </p>
+            <p>xinyizh@umich.edu </p>
+        </div>
+
+        <form action="#" onsubmit="return checkform()" method="POST">
+            <fieldset>
+                <legend>You can also fill out the form below to contact me.</legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name"><br />
+                <p class="errormsg" id="nameerrormsg">Please let me know how I should call you.</p>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="email@domain.com"><br />
+                <p class="errormsg" id="emailerrormsg">Please let me know how I can contact you.</p>
+                <label for="comments">Comments: </label>
+                <textarea name="comment" placeholder="Anything you want to know or want me to know" id="comments"></textarea>
+            </fieldset>
+            <input type="submit" value="Send" id="button">
+        </form>
+    </main>
+    <footer>
+        &copy 2018 by Xinyi Zhang
+    </footer>
+</body>
+
+
+</html>
