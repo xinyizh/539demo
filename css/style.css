@@ -99,14 +99,14 @@ form p {
 } 
 
 form input[type="submit"] {
-	background-color:#f09e9e;
+	background-color:black;
 	-moz-border-radius:24px;
 	-webkit-border-radius:24px;
 	border-radius:24px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:'Ubuntu', sans-serif;
 	font-size:17px;
 	padding:5px 16px;
 	text-decoration:none;
