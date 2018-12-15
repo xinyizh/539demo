@@ -236,7 +236,11 @@ section {
 		float: left;
 		border: 20px;
 	}
-
+	
+/* 	#{
+		width: 100%;
+	}
+ */
 	.gallery{
 		width: 95%;
 		border: 2px;
